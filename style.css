@@ -1,0 +1,215 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 5 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 100px 0px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FEAC5E), color-stop(#C779D0), to(#4BC0C8));
+    background: -o-linear-gradient(top, #FEAC5E, #C779D0, #4BC0C8);
+    background: linear-gradient(to bottom, #FEAC5E, #C779D0, #4BC0C8);
+}
+
+section:before {
+    content: 'ZOOMX';
+    position: absolute;
+    font-size: 20em;
+    color: rgba(0,0,0,0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 900;
+    margin-top: 20vh;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 40px 100px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+    -webkit-filter: invert(1);
+            filter: invert(1);
+}
+
+.toggle {
+    width: 30px;
+    height: 30px;
+    background: url(images/menu.png);
+    background-size: 30px;
+    -webkit-filter: invert(1);
+            filter: invert(1);
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+
+.content .image-box {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.content .image-box img {
+    max-width: 100%;
+}
+
+.content .text {
+    max-width: 700px;
+    margin-top: 80px;
+}
+
+.content .text h2 {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.content .text p {
+    color: #fff;
+    font-size: 1em;
+}
+
+.content .text a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #222;
+    background: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.social {
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-filter: invert(1);
+            filter: invert(1);
+    padding-bottom: 50px;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li img {
+    max-width: 50px;
+}
+
+.social li a {
+    display: block;
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+}
+
+@media (max-width: 767px) {
+    section {
+        padding: 40px;
+        overflow-x: hidden;
+    }
+
+    section:before {
+        font-size: 20vh;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%)
+    }
+
+    header {
+        padding: 20px 40px;
+    }
+
+    .content {
+        margin-top: 120px;
+    }
+
+    .social {
+        margin-top: 30px;
+        position: relative;
+        bottom: 40px;
+        right: initial;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .social li {
+        margin-right: 15px;
+    }
+}
